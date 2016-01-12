@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+<h2>{{.hi}}</h2>
+
+{{ if .Username }}
+hi {{.Username}},<a href="/logout">退出</a>
+{{else}}
+<a href="/login">登录</a>
+{{end}}
+</body>
+</html>
